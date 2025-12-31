@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aggrefiles"
+version = "0.2.0"
+description = "Aggregate files of a given extension into a single output file, with optional gitignore filtering."
+requires-python = ">=3.8"
+dependencies = [
+    "pathspec>=0.11.0"
+]
+
+[project.scripts]
+aggrefiles = "aggrefiles.__main__:main"
